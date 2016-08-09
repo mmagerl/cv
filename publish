@@ -1,0 +1,5 @@
+#! /bin/bash
+
+name=cv-"$(date +'%Y-%m')"
+
+cp latex/cv.pdf $name.pdf
