@@ -11,14 +11,15 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage{verbatim} % for 'comment'
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{10pt}
 \newlength{\tablewidth}
 
-\setlist[itemize]{topsep=0em, itemsep=0.0em}
-\setlist[itemize,1]{before=\vspace{-1em}}
+\setlist[itemize]{topsep=0em, itemsep=-0.5em}
+\setlist[itemize,1]{before=\vspace{-1.2em}, after=\vspace{-0.8em}}
 
 \newenvironment{period}[2]{%
 \newcommand{\sarma}{#2}%
@@ -35,16 +36,16 @@
 \newenvironment{skills}{%
 \setlength{\tablewidth}{\linewidth}
 \addtolength{\tablewidth}{-2\tabcolsep}
+\setlength{\extrarowheight}{0.2em}
 \begin{tabular}{@{}p{0.1\tablewidth}p{0.9\tablewidth}@{}}
 }{%
 \end{tabular}
-% TODO Smanji prored
 }
 
-\titleformat{\section}{\uppercase}{}{0pt}{}[{\vspace{0.5em}\titlerule}]
+\titleformat{\section}{\uppercase}{}{0pt}{}[{\titlerule}]
 \titleformat{\subsection}{\bf}{}{0pt}{}{}
-\titlespacing{\section}{0pt}{-0.5em}{0.5em}
-\titlespacing{\subsection}{0pt}{0pt}{0.1em}
+\titlespacing{\section}{0pt}{0.2em}{0.3em}
+\titlespacing{\subsection}{0pt}{0.0em}{0pt}
 
 \begin{document}
 \fontfamily{\sfdefault}
@@ -57,6 +58,7 @@
 \begin{minipage}{.5\textwidth}
 \raggedleft
 \href{mailto:mislavmagerl@gmail.com}{mislavmagerl@gmail.com} \\
+\href{https://hr.linkedin.com/in/mislavmagerl}{hr.linkedin.com/in/mislavmagerl} \\
 +385 91 558 3089
 \end{minipage}
 
@@ -68,7 +70,6 @@
     \item 
         fault prediction of network devices using Machine Learning
 \end{period}
-\vspace{-1em}\\
 \begin{period}{Software Engineering Intern}{Jan 2016 -- Feb 2016}
     \item 
         built an internal library in C\#
@@ -80,37 +81,47 @@
 \end{period}
 
 \subsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
-\begin{period}{Teaching assistant}{Mar 2013 -- Jan 2014}
+\begin{period}{Technical assistant}{Mar 2013 -- Jan 2014}
     \item Algorithms and Data Structures, Electronics I
 \end{period}
-\vspace{-1em}\\
 \begin{period}{Team leader}{Sep 2014 -- Jan 2015}
     \item managed a team of 7 students in \textit{Software Design} class project
 \end{period}
 
 \section{education}
 \subsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
-\begin{period}{Pursuing MSc in Computer Science}{Oct 2015 -- Jul 2017\linebreak(expected)}
+\begin{period}{MSc in Computer Science}{Oct 2015 -- Jul 2017}
+    \item thesis:
+        \textit{"Failure Prediction for Network Access Devices Based on Time Series Analysis"}
+    \item grades average: \textbf{4.6} out of 5
     \item relevant courses:
         \textit{Machine Learning},
         \textit{Deep learning},
+        \textit{Analysis of Massive Datasets},
         \textit{Competitive programming}
 \end{period}
 \begin{period}{BSc in Computer Science}{Oct 2012 -- Jul 2015}
-    \item thesis:
-        \textit{"Hierarchical clustering of composite applications with regard to reliability model"}
     \item grades average: \textbf{4.2} out of 5
 \end{period}
 
 \section{projects}
+
+\begin{period}{\href{http://futsa.net}{Futsa}}{Feb 2017 -- Jun 2017}
+	\item Android and web app that helps you organize matches with your friends
+	\item
+		2\textsuperscript{nd} place in App Start Contest -- largest Croatian student contest in app development
+
+\end{period}
+
 \begin{period}{\href{https://github.com/mmagerl/bioinformatics-project}{Construction of Wavelet trees using RRR structure}}{Oct 2016 -- Jan 2017}
 	\item 
 		Team project as a part of \textit{Bioinformatics} course
 \end{period}
 
+
 \begin{period}{\href{http://tinyurl.com/zetapp}{ZetApp}}{Apr 2015}
 	\item Android App for viewing Tram and Bus timetables in Zagreb
-	\item \textbf{16000} users and 35000 downloads with \textbf{4.3} rating
+	\item \textbf{15000} users and 42000 downloads with \textbf{4.3} rating
 \end{period}
 
 \section{technical skills}
@@ -121,28 +132,16 @@
     \end{itemize} \\
     Basic &
     \begin{itemize}
-        \item \textbf{C++, Python, Ruby on Rails, React} -- used in university courses and individual projects
-        \item \textbf{C\#} -- used in Combis d.o.o.
+        \item \textbf{C/C++, Git, Python, Ruby on Rails, React} -- used in university courses and individual projects
+        \item \textbf{C\#} -- used in Combis
     \end{itemize} \\
 \end{skills}
 
 \section{other skills and interests}
 \begin{skills}
-	Languages & 
-	\begin{itemize}
-		\item
-			Croatian (native), English (B2) 
-	\end{itemize} \\
-	Other skills &
-	\begin{itemize}
-    	\item 
-    		Organization, communication and presentation skills acquired in \textit{eSTUDENT} -- the largest student association in Croatia 
-    \end{itemize} \\
-    Interests &
-    \begin{itemize}
-    	\item 
-    		Member of Folk Group "KOLO", the local church choir, faculty choir
-    \end{itemize} \\
+	Languages & Croatian (native), English (B2)  \\
+	Other skills & Organization, communication and presentation skills acquired in \textit{eSTUDENT} -- the largest student association in Croatia \\
+    Interests & Folklore, Choir Singing, Music \\
 \end{skills}
 
 \end{document}
